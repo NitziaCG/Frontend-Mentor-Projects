@@ -1,0 +1,292 @@
+/* 
+Notes:
+NO: font-size: 1vw;
+YEAH: font-size: calc(1vw + 1rem)
+(Because when we get smaller the page, the text is gonna be unreadable.)
+
+min() and max()
+.box {
+  it takes the lowest value when we resize the page
+  width: min(100px, 10%)
+  
+  it's the opposite of min()
+  height: max(300px, 40%)
+}
+
+clamp()
+
+
+*/
+
+
+body {
+    box-sizing: border-box;
+    background-color: #f2f1f5;
+    overflow: hidden;
+}
+
+:root {
+    --text-color: hsl(228, 12%, 48%);
+    --dark-cyan: hsl(158, 36%, 37%);
+    --title-font: 'Fraunces', serif;
+    --text-font: 'Montserrat', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+*::selection {
+    color: white;
+    background-color: rgb(80, 80, 80);
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(30, 38%, 92%);
+    z-index: 1;
+}
+
+.product {
+    width: 80%;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+    font-family: var(--text-font);
+    transition: transform 0.5s;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+}
+
+.product__img {
+    background-image: url(images/image-product-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 3% 3% 0 0;
+    width: 100%;
+    height: 40%;
+}
+
+.product-char {
+    margin: 0 5%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.product-char__type {
+    margin: 0;
+    color: var(--text-color);
+    font-size: clamp(1rem, 1.5vw, 1rem); 
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.product-char__name {
+    margin: 0;
+    font-size: clamp(1.75rem, 2vw, 4rem); 
+    font-family: var(--title-font);
+}
+
+.product-char__description {
+    margin: 0;
+    color: var(--text-color);
+    line-height: 1.6;
+    font-size: clamp(1rem, 1.75vw, 1rem); 
+    font-family: var(--text-font);
+    font-weight: 500;
+}
+
+.product-char__current-price {
+    display: inline-block;
+    color: var(--dark-cyan);
+    font-family: var(--title-font);
+    font-size: clamp(2rem, 4vw, 2rem); 
+    font-weight: 800;
+}
+
+.product-char__previous-price {
+    display: inline-block;
+    color: var(--text-color);
+    font-style: italic;
+    text-decoration: line-through;
+    font-size: clamp(1rem, 2vw, 1rem); 
+}
+
+.product-char__add {
+    margin: 0 auto;
+    width: 80%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-cyan);
+    color: #fff;
+    font-weight: 800;
+    font-family: var(--text-font);
+    border: none;
+    border-radius: 0.5rem;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.product-char__add:hover {
+    transform: translateY(-3px);
+    background-color: rgb(60, 107, 94);
+    cursor: pointer;
+}
+
+.product-char__add img {
+    margin-right: 5%;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 2px;
+}
+
+.figure-1 {
+    position: absolute;
+    top: 0;
+    left: 120px;
+    box-sizing: border-box;
+    width: 40px;
+    height: 90px;
+    border-left: 8px solid #ff7f50;
+    border-bottom: 8px solid #ff7f50;
+    opacity: 0.5;
+    border-radius: 3px;
+}
+
+.figure-2 {
+    width: 90px;
+    height: 35px;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    display: flex;
+    gap: 10px;
+    opacity: 0.5;
+}
+
+.figure-2 div:nth-child(even) {
+    transform: rotate(-45deg);
+}
+
+.figure-2 div:nth-child(odd) {
+    transform: rotate(45deg);
+}
+
+.figure-2 div {
+    height: 26px;
+    width: 8px;
+    background-color: #ff7f50;
+}
+
+.figure-3 {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 140px;
+    height: 280px;
+    left: 70px;
+    top: 40%;
+    opacity: 0.5;
+}
+
+.figure-3 div {
+    height: 120px;
+    width: 15px;
+    background-color: #000fff;
+    transform: rotate(30deg);
+}
+
+.figure-4 {
+    width: 78px;
+    height: 100px;
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    opacity: 0.5;
+}
+
+
+.figure-4 div {
+    display: grid;
+    width: 20px;
+    height: 20px;
+    background-color: #20b2aa;
+    border-radius: 50%;
+}
+
+.figure-5 {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    bottom: -90px;
+    left: 70%;
+    border: 10px solid lightblue;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+
+@media screen and (min-width: 765px) {
+    .card {
+        width: 70%;
+        height: 80%;
+        width: clamp(60%, 70vw 100%);
+        box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+    }
+    
+    .product {
+        width: 50%;
+        width: min(80%, 50vw);
+        height: 80%;
+        flex-direction: row;
+        box-shadow: none;
+    }
+
+    .product__img {
+        background-image: url(images/image-product-desktop.jpg);
+        background-size: cover;
+        width: 50%;
+        height: 100%;
+        border-radius: 3% 0 0 3%;
+    }
+
+    .product-char {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
