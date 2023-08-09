@@ -1,0 +1,194 @@
+body {
+    box-sizing: border-box;
+    background-color: #f2f1f5;
+    overflow: hidden;
+    font-family: 'Outfit', sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.background {
+    background-color: #f2f1f5;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-box {
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #add8e6;
+    z-index: 1;
+}
+
+.qr-card {
+    background-color: hsl(0, 0%, 100%);
+    padding: 5%;
+    width: 75%;
+    max-width: 400px;
+    height: 80%;
+    border-radius: 1.5rem;
+    transition: transform 1s, box-shadow 1s;
+}
+
+.qr-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 2px 4px 5px hsl(220, 15%, 55%);
+}
+
+.qr-card__img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1rem;
+}
+
+
+.qr-card__char {
+    width: 100%;
+    height: 40%;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.qr-card__char--title {
+    width: 100%;
+    font-size: clamp(1.5rem, 5vw, 1.5rem);
+    /* font-size: 5vw; */
+    font-weight: 700;
+    color: hsl(218, 44%, 22%);
+}
+
+.qr-card__char--text {
+    width: 100%;
+    font-size: clamp(1rem, 2vw, 1rem);
+    font-weight: 400;
+    color: hsl(220, 15%, 55%);
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+}
+
+.figure-1 {
+    position: absolute;
+    top: 0;
+    right: 30%;
+    box-sizing: border-box;
+    width: 40px;
+    height: 60px;
+    border-left: 8px solid #ff7f50;
+    border-bottom: 8px solid #ff7f50;
+    opacity: 0.5;
+    border-radius: 3px;
+}
+
+.figure-2 {
+    width: 50px;
+    height: 140px;
+    position: absolute;
+    top: 30%;
+    left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    opacity: 0.7;
+}
+
+
+.figure-2 div {
+    display: grid;
+    width: 20px;
+    height: 20px;
+    background-color: #20b2aa;
+    border-radius: 50%;
+    box-shadow: inset 1px 1px 1px lightgray;
+}
+
+.figure-3 {
+    width: 90px;
+    height: 35px;
+    position: absolute;
+    right: 0;
+    top: 25%;
+    display: flex;
+    gap: 10px;
+    opacity: 0.5;
+}
+
+.figure-3 div:nth-child(even) {
+    transform: rotate(-45deg);
+}
+
+.figure-3 div:nth-child(odd) {
+    transform: rotate(45deg);
+}
+
+.figure-3 div {
+    height: 26px;
+    width: 8px;
+    background-color: #ff7f50;
+}
+
+.figure-4 {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 140px;
+    left: 30%;
+    bottom: 0;
+    opacity: 0.3;
+}
+
+.figure-4 div {
+    height: 120px;
+    width: 15px;
+    background-color: #000fff;
+    transform: rotate(30deg);
+}
+
+.figure-5 {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    bottom: -130px;
+    right: 40px;
+    border: 10px solid lightblue;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+@media screen and (min-width: 820px) {
+    .card-box {
+        width: 70%;
+        height: 80%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 10px;
+    }
+
+    .qr-card {
+        max-width: none;
+        padding: 3%;
+        width: 50%;
+        max-width: 350px;
+        height: 90%;
+    }
+}
