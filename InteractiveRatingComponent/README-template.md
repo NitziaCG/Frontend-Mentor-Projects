@@ -1,6 +1,6 @@
 # Screenshots
 
-![](./images/submit.png.jpg)
+![](./images/submit.png)
 
 
-![](./images/success.png.jpg)
+![](./images/success.png)
