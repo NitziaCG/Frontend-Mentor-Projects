@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+  <article id="submit-card">
+    <div class="icon"></div>
+    <h1 class="title">How did we do?</h1>
+    <p class="description">
+      Please let us know how we did with your support
+      request. All feedback is appreciated to help us
+      improve our offering!
+    </p>
+    <div class="options-container">
+      <input type="radio" name="option" id="op1" value="1">
+      <label for="op1" class="radio-label">
+        <span class="radio-span">1</span>
+      </label>
+      <input type="radio" name="option" id="op2" value="2">
+      <label for="op2" class="radio-label">
+        <span class="radio-span">2</span>
+      </label>
+      <input type="radio" name="option" id="op3" value="3">
+      <label for="op3" class="radio-label">
+        <span class="radio-span">3</span>
+      </label>
+      <input type="radio" name="option" id="op4" value="4">
+      <label for="op4" class="radio-label">
+        <span class="radio-span">4</span>
+      </label>
+      <input type="radio" name="option" id="op5" value="5">
+      <label for="op5" class="radio-label">
+        <span class="radio-span">5</span>
+      </label>
+    </div>
+    <button id="submit" class="submitBtn">SUBMIT</button>
+  </article>
+
+  <article id="success-card" class="hidden success-card">
+    <img src="images/illustration-thank-you.svg" alt="Ilustration Thank You" class="thank-you-img">
+    <h3 class="output">You selected 
+      <span id="submitted-rating"></span> 
+      out of 5
+    </h3>
+    <h1 class="title">Thank you!</h1>
+    <p class="thanks-description">We appreciate you taking the time to give a rating. If you ever need more
+        support, don't hesitate to get in touch!
+    </p>
+  </article>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
