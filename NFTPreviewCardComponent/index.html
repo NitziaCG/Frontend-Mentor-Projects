@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>NFT preview card component</title>
+
+</head>
+<body>
+  <main>
+    <article>
+      <img src="images/image-equilibrium.jpg" alt="Equilibrium #3429" class="nft-img">
+      <div class="view-img"></div>
+      <h1 class="title">Equilibrium #3429</h1>
+      <p class="description">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+      <div class="chars">
+
+        <div class="eth-box">
+          <img src="images/icon-ethereum.svg" alt="Ethereum">
+          <span>0.041 ETH</span>
+        </div>
+
+        <div class="time-box">
+          <img src="images/icon-clock.svg" alt="Clock icon">
+          <span>3 days left</span>
+        </div>
+      </div>
+      <div class="author-box">
+        <img src="images/image-avatar.png" alt="Avatar" class="avatar">
+        <span class="avatar-span">Creation of</span>
+        <span class="username">Jules Wyvern</span>
+      </div>
+    </article>
+    <div class="big-picture hidden">
+      <button class="close-big-picture">
+        <img src="images/close.png" alt="close">
+      </button>
+      <img src="images/image-equilibrium.jpg" alt="Equilibrium big image">
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
