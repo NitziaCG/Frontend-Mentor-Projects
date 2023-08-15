@@ -6,4 +6,4 @@
 ![](./desktop-screenshot.PNG)
 
 ## - Mobile preview
-![](./mobile-screenshot.PNG)
+![](./mobile-screenshot.PNG.jpg)
