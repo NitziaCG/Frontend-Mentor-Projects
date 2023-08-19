@@ -1,7 +1,7 @@
 # Screenshots
 
 ## Mobile design
-![](./images/mobile-design.png)
+<img src="https://github.com/NitziaCG/Frontend-Mentor-Projects/blob/main/ProfileCardComponent/images/mobile-design.png" width=500>
 
 ## Desktop design
 ![](./images/desktop-design.png)
