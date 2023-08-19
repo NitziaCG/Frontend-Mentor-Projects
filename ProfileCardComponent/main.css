@@ -1,0 +1,107 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    background-color: var(--dark-cyan);
+    margin: 0;
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-size: 1000px;
+    background-position: top -500px left -500px, bottom -500px right -500px;
+    background-repeat: no-repeat, no-repeat;
+    overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+:root {
+    /* Primary */
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+
+    /* Neutral */
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+.wrapper {
+    width: 350px;
+    height: 400px;
+    background-color: #fff;
+    margin: calc((100vh - 400px)/2) auto;
+    border-radius: 20px;
+}
+
+.profile {
+    background-image: url(images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px 20px 0 0;
+}
+
+.profile-box {
+    height: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-box__img {
+    box-sizing: content-box;
+    border-radius: 50%;
+    margin-top: 60px;
+    border: 7px solid hsl(0, 0%, 100%)
+}
+
+.profile-box__name {
+    margin-top: 20px;
+    color: var(--very-dark-desaturated-blue);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.age {
+    color: var(--dark-grayish-blue);
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.profile-box__city {
+    margin-top: 5px;
+    color: var(--dark-grayish-blue);
+}
+
+.profile-descr {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    border-top: 0.5px solid hsl(0, 0%, 83%);
+}
+
+.profile-descr__box__h2 {
+    color: var(--very-dark-desaturated-blue);
+    font-size: 20px;
+}
+
+.profile-descr__box__span {
+    color: var(--dark-grayish-blue);
+    font-size: 15px;
+}
+
+@media screen and (max-width: 420px) {
+    body {
+        background-position: top -700px left -700px, bottom -600px right -600px;
+    }
+}
+
