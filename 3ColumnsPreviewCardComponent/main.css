@@ -1,0 +1,127 @@
+body {
+    justify-content: center;
+    box-sizing: border-box;
+    max-width: 100vw;
+    min-height: 100vh;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Primary */
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* Neutral */
+    --transparent-white: hsla(0, 0%, 100%, 0.75); /*paragraphs*/
+    --very-light-gray: hsl(0, 0%, 95%); /*background, headings, buttons*/
+}
+
+.container {
+    width: clamp(200px, 70%, 400px);
+    margin: 50px auto;
+}
+
+.box {
+    padding: 25px;
+    padding: clamp(25px, 8vw, 50px);
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.box-1 {
+    background-color: var(--bright-orange);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.box-2 {
+    background-color: var(--dark-cyan);
+}
+
+.box-3 {
+    background-color: var(--very-dark-cyan);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.box-type {
+    margin: 20px 0;
+    color: var(--very-light-gray);
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.box-descr {
+    color: var(--transparent-white);
+}
+
+.box-btn {
+    width: 150px;
+    height: 35px;
+    background-color: var(--very-light-gray);
+    font-family: inherit;
+    font-weight: 700;
+    border: none;
+    border-radius: 30px;
+    transition: background 0.3s, color 0.3s;
+    margin-top: 35px;
+}
+
+.btn-1 {
+    color: var(--bright-orange);
+}
+
+.btn-2 {
+    color: var(--dark-cyan);
+}
+
+.btn-3 {
+    color: var(--very-dark-cyan);
+}
+
+.box-btn:hover {
+    background-color: transparent;
+    color: var(--very-light-gray);
+    border: 2px solid var(--very-light-gray);
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 800px;
+    }
+
+    .box {
+        padding: 40px 20px;
+    }
+
+    .box-btn {
+        margin-top: 60px;
+    }
+
+    .box-1 {
+        border-radius: 7px 0 0 7px;
+    }
+
+    .box-3 {
+        border-radius: 0 7px 7px 0;
+    }
+}
