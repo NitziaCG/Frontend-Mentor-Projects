@@ -21,7 +21,7 @@ Desktop design
 ### Links
 
 - Solution URL: [Guthub Repository](https://github.com/NitziaCG/Frontend-Mentor-Projects/tree/main/social-proof-section-master)
-- Live Site URL: [Site]()
+- Live Site URL: [Site](https://social-proof-section-master-11.netlify.app/)
 
 
 ### Built with
