@@ -12,11 +12,9 @@
 This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 Mobile design
-![](./design/mobile-1.png =300x) ![](./design/mobile-2.png = 300x)
 <img src="./design/mobile-1.png" width="300"><img src="./design/mobile-2.png" width="300">
 
 Desktop design
-![](./design/desktop.png =800x)
 <img src="./design/desktop.png" width="600">
 
 
