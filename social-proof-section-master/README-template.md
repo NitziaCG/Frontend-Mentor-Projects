@@ -13,9 +13,11 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 
 Mobile design
 ![](./design/mobile-1.png =300x) ![](./design/mobile-2.png = 300x)
+<img src="./design/mobile-1.png" width="300"><img src="./design/mobile-2.png" width="300">
 
 Desktop design
 ![](./design/desktop.png =800x)
+<img src="./design/desktop.png" width="600">
 
 
 ### Links
