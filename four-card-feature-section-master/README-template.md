@@ -11,17 +11,16 @@
 ### Screenshot
 This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-Mobile design
-![](./design/mobile-screenshot.png) ![](./design/mobile-screenshot(2).png)
+### Mobile design
+<img src="./design/mobile-screenshot.png" width="300"><img src="./design/mobile-screenshot(2).png" width="300">
 
-Desktop design
-![](./design/desktop-screenshot.png)
-
+### Desktop design
+<img src="./design/desktop-screenshot.png" width="600">
 
 ### Links
 
-- Solution URL: [Guthub Repository](https://github.com/NitziaCG/Frontend-Mentor-Projects/tree/main/four-card-feature-section-master)
-- Live Site URL: [Site]()
+- Solution URL: [Github Repository](https://github.com/NitziaCG/Frontend-Mentor-Projects/tree/main/four-card-feature-section-master)
+- Live Site URL: [Site](https://four-card-feature-section-12-36757b.netlify.app/)
 
 
 ### Built with
