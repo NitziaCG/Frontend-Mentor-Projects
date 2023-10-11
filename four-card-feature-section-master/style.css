@@ -1,0 +1,139 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+:root {
+    /* Primary */
+    --p-red: hsl(0, 78%, 62%);
+    --p-cyan: hsl(180, 62%, 55%);
+    --p-orange: hsl(34, 97%, 64%);
+    --p-blue: hsl(212, 86%, 64%);
+
+    /* Neutral */
+    --n-very-dark-blue: hsl(234, 12%, 34%);
+    --n-grayish-blue: hsl(229, 6%, 66%);
+    --n-very-light-gray: hsl(0, 0%, 98%);
+}
+
+.o-header {
+    width: 375px;
+    margin: 70px auto;
+}
+
+.o-header__light-text {
+    font-size: 2em;
+    font-weight: 200;
+    color: var(--n-very-dark-blue);
+    text-align: center;
+}
+
+.o-header-bold-text {
+    font-size: 2em;
+    font-weight: 600;
+    color: var(--n-very-dark-blue);
+    text-align: center;
+}
+
+.o-header__description {
+    color: var(--n-grayish-blue);
+    margin: 20px 0;
+    text-align: justify;
+    padding: 0 10px;
+}
+
+.c-card {
+    position: relative;
+    width: 375px;
+    height: 280px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+.c-card__title {
+    color: var(--n-very-dark-blue);
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.c-card-description {
+    color: var(--n-grayish-blue);
+    margin-top: 10px;
+}
+
+.c-card-icon {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.supervisor-card {
+    border-top: 5px solid var(--p-cyan);
+}
+
+.team-builder-card {
+    border-top: 5px solid var(--p-red);
+}
+
+.karma-card {
+    border-top: 5px solid var(--p-orange);
+}
+
+.calculator-card {
+    border-top: 5px solid var(--p-blue);
+}
+
+
+@media screen and  (min-width: 1240px) {
+    .o-header {
+        width: 520px;
+    }
+
+    .o-header-bold-text,
+    .o-header__light-text {
+        font-size: 2.5em;
+    }
+
+    .o-header__description {
+        text-align: center;
+        font-size: 1.25em;
+    }
+
+    .c-card {
+        margin: 0;
+    }
+
+    .o-cards {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+
+    .o-left-container-bs {
+        align-self: center;
+    }
+
+    .o-right-container-bs {
+        align-self: center;
+    }
+
+    .o-center-container-bs {
+        margin: 0 40px;
+    }
+
+    .team-builder-card {
+        margin-bottom: 40px;
+    }
+}
