@@ -1,0 +1,191 @@
+body {
+    box-sizing: border-box;
+    background-color: var(--off-white-bg);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+:root {
+    --purple-num: hsl(259, 100%, 65%);
+    --light-red-msg: hsl(0, 100%, 67%);
+    --white-bg: hsl(0, 0%, 100%);
+    --off-white-bg: hsl(0, 0%, 94%);
+    --light-grey-bg: hsl(0, 0%, 86%);
+    --smoke-grey-txt: hsl(0, 1%, 44%);
+    --of-black-txt: hsl(0, 0%, 8%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+main,
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: clamp(320px, 85%, 600px);
+    height: clamp(550px, 60%, 900px);
+    background-color: var(--white-bg);
+    border-radius: 25px 25px 30% 25px;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    box-shadow: 2px 2px 10px var(--light-grey-bg); 
+}
+
+.wrapper-input,
+.wrapper-button,
+.wrapper-output {
+    width: 90%;
+}
+
+.wrapper-input {
+    display: flex;
+    gap: 2%;
+}
+
+.wrapper-input > div {
+    width: 33%;
+    max-width: 33%;
+}
+
+.wrapper-input-text {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--smoke-grey-txt);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.wrapper-input-field {
+    width: calc(90% - 5px);
+    height: 50px;
+    padding-left: 5px;
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 800;
+    border-radius: 5px;
+    border: 2px solid var(--light-grey-bg);
+}
+
+.wrapper-input-field:focus {
+    outline: none;
+    border-color: var(--purple-num);
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  display: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.wrapper-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.wrapper-button-line {
+    width: 100%;
+    height: 2px;
+    background-color: var(--light-grey-bg);
+}
+
+.button {
+    width: 70px;
+    height: 70px;
+    background-color: var(--purple-num);
+    border-radius: 50%;
+    border: none;
+    position: fixed;
+}
+
+.button:hover {
+    background-color: var(--of-black-txt);
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.btn-img  {
+    width: 30px;
+}
+
+.btn-img path {
+    stroke-width: 3.5px;
+}
+
+.wrapper-output-text {
+    font-size: 48px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: 800;
+    color: var(--of-black-txt);
+}
+
+.wrapper-output-text-num {
+    color: var(--purple-num);
+}
+
+/* classes for errors */
+.wrapper-input-warning {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--light-red-msg);
+}
+
+.input-error {
+    border-color: var(--light-red-msg);
+}
+
+.text-error {
+    color: var(--light-red-msg);
+}
+
+.hide {
+    display: none;
+}
+
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins-Regular.ttf') format('truetype'),
+        url('/assets/fonts/Poppins-BoldItalic.ttf') format('truetype'),
+        url('/assets/fonts/Poppins-ExtraBoldItalic.ttf') format('truetype')
+}
+
+@media screen and (min-width: 768px) {
+    .wrapper-output-text {
+        font-size: 52px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .wrapper-button {
+        align-items: flex-end;
+    }
+
+    .wrapper-output-text {
+        font-size: 60px;
+    }
+}

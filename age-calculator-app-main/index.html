@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <title>Frontend Mentor | Age calculator app</title>
+
+</head>
+<body>
+
+  <main>
+    <article class="wrapper">
+      <section class="wrapper-input">
+        <div>
+          <span class="wrapper-input-text">day</span>
+          <input id="day-input" class="wrapper-input-field" type="number">
+          <span id="day-error" class="wrapper-input-warning"></span>
+        </div>
+        <div>
+          <span class="wrapper-input-text">month</span>
+          <input id="month-input" class="wrapper-input-field" type="number">
+          <span id="month-error" class="wrapper-input-warning"></span>
+        </div>
+        <div>
+          <span class="wrapper-input-text">year</span>
+          <input id="year-input" class="wrapper-input-field" type="number">
+          <span id="year-error" class="wrapper-input-warning"></span>
+        </div>
+      </section>
+
+      <section class="wrapper-button">
+        <div class="wrapper-button-line"></div>
+        <button id="button" class="button">
+          <svg class="btn-img" xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+        </button>
+      </section>
+
+      <section class="wrapper-output">
+        <p class="wrapper-output-text">
+          <span id="year-output" class="wrapper-output-text-num">--</span>
+          years
+        </p>
+        <p class="wrapper-output-text">
+          <span id="month-output" class="wrapper-output-text-num">--</span>
+          months
+        </p>
+        <p class="wrapper-output-text">
+          <span id="day-output" class="wrapper-output-text-num">--</span>
+          days
+        </p>
+      </section>
+    </article>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
