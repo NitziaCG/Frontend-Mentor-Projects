@@ -26,7 +26,7 @@ Users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
-### Screenshot
+### Screenshots
 
 <section style="display:flex; gap: 30px; flex-wrap:wrap">
   <div>
