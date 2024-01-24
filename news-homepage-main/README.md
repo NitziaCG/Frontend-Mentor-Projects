@@ -45,7 +45,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Repository](https://github.com/NitziaCG/Frontend-Mentor-Projects/tree/main/news-homepage-main)
-- Live Site URL: [[Add live site URL here](https://news-homepage-main-6eb586.netlify.app/)](https://news-homepage-main-6eb586.netlify.app/)
+- Live Site URL: <a href="https://news-homepage-main-6eb586.netlify.app/" target="_blank">https://news-homepage-main-6eb586.netlify.app/</a>
 
 ## My process
 
