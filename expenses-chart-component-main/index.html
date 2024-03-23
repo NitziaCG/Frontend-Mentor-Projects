@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Expenses chart component</title>
+</head>
+<body>
+  <main class="wrapper">
+    <section class="wrapper__balance">
+      <h2>My balance</h2>
+      <strong class="wrapper__balance__price">$921.48</strong>
+      <div class="wrapper__balance__circles--white"></div>
+      <div class="wrapper__balance__circles--brown"></div>
+    </section>
+
+    <section class="wrapper__statistics">
+      <header>
+        <h1>Spending - Last 7 days</h1>
+      </header>
+
+      <article class="wrapper__statistics__graphs">
+        <div>
+          <div id="mon" class="bar"></div>
+          <span>mon</span>
+        </div>
+        <div>
+          <div id="tue" class="bar"></div>
+          <span>tue</span>
+        </div>
+        <div>
+          <div id="wed" class="bar"></div>
+          <span>wed</span>
+        </div>
+        <div>
+          <div id="thu" class="bar"></div>
+          <span>thu</span>
+        </div>
+        <div>
+          <div id="fri" class="bar"></div>
+          <span>fri</span>
+        </div>
+        <div>
+          <div id="sat" class="bar"></div>
+          <span>sat</span>
+        </div>
+        <div>
+          <div id="sun" class="bar"></div>
+          <span>sun</span>
+        </div>
+      </article>
+
+      <footer class="wrapper__statistics__footer">
+        <div>
+          <h2>Total this month</h2>
+          <strong class="wrapper__statistics__footer__total">$478.33</strong>
+        </div>
+        <p class="wrapper__statistics__footer__percent"><b>+2.4%</b><br>from last month</p>
+      </footer>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
