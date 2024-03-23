@@ -45,7 +45,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Repository](https://github.com/NitziaCG/Frontend-Mentor-Projects/tree/main/expenses-chart-component-main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://expenses-chart-component-main-ac39a.netlify.app/](https://expenses-chart-component-main-ac39a.netlify.app/)
 
 ## My process
 
