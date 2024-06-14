@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="dist/normalize.css">
+  <link rel="stylesheet" href="dist/style.css">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <article class="profile">
+      <section class="profile__info">
+        <img src="images/image-jeremy.png" alt="Jeremy">
+        <div class="profile__info__name">
+          <p>Report for</p>
+          <h3>Jeremy Robson</h3>
+        </div>
+      </section>
+      <div class="profile__time-options">
+        <button id="daily" class="profile__time-options__btn">Daily</button>
+        <button id="weekly" class="profile__time-options__btn">Weekly</button>
+        <button id="monthly" class="profile__time-options__btn">Monthly</button>
+      </div>
+    </article>
+
+    <article id="work" class="card work-bg">
+      <section class="card__statistics">
+        <div class="card__statistics__top">
+          <span>Work</span>
+          <button class="card__statistics__top__btn">
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </button>
+        </div>
+        <div>
+          <span class="card__statistics__current-time"><b class="work-current-time">0</b>hrs</span>
+          <span class="card__statistics__previous-time">Last Week - <b class="work-previous-time">0</b>hrs</span>
+        </div>
+      </section>
+    </article>
+
+    <article id="play" class="card play-bg">
+      <section class="card__statistics">
+        <div class="card__statistics__top">
+          <span>Play</span>
+          <button class="card__statistics__top__btn">
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </button>
+        </div>
+        <div>
+          <span class="card__statistics__current-time"><b class="play-current-time">0</b>hrs</span>
+          <span class="card__statistics__previous-time">Last Week - <b class="play-previous-time">0</b>hrs</span>
+        </div>
+      </section>
+    </article>
+
+    <article id="study" class="card study-bg">
+      <section class="card__statistics">
+        <div class="card__statistics__top">
+          <span>Study</span>
+          <button class="card__statistics__top__btn">
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </button>
+        </div>
+        <div>
+          <span class="card__statistics__current-time"><b class="study-current-time">0</b>hrs</span>
+          <span class="card__statistics__previous-time">Last Week - <b class="study-previous-time">0</b>hrs</span>
+        </div>
+      </section>
+    </article>
+
+    <article id="exercise" class="card exercise-bg">
+      <section class="card__statistics">
+        <div class="card__statistics__top">
+          <span>Exercise</span>
+          <button class="card__statistics__top__btn">
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </button>
+        </div>
+        <div>
+          <span class="card__statistics__current-time"><b class="exercise-current-time">0</b>hrs</span>
+          <span class="card__statistics__previous-time">Last Week - <b class="exercise-previous-time">0</b>hrs</span>
+        </div>
+      </section>
+    </article>
+
+    <article id="social" class="card social-bg">
+      <section class="card__statistics">
+        <div class="card__statistics__top">
+          <span>Social</span>
+          <button class="card__statistics__top__btn">
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </button>
+        </div>
+        <div>
+          <span class="card__statistics__current-time"><b class="social-current-time">0</b>hrs</span>
+          <span class="card__statistics__previous-time">Last Week - <b class="social-previous-time">0</b>hrs</span>
+        </div>
+      </section>
+    </article>
+
+    <article id="self-care" class="card self-care-bg">
+      <section class="card__statistics">
+        <div class="card__statistics__top">
+          <span>Self Care</span>
+          <button class="card__statistics__top__btn">
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </button>
+        </div>
+        <div>
+          <span class="card__statistics__current-time"><b class="self-care-current-time">0</b>hrs</span>
+          <span class="card__statistics__previous-time">Last Week - <b class="self-care-previous-time">0</b>hrs</span>
+        </div>
+      </section>
+    </article>
+
+  </div>
+  <script src="./app.js" type="module"></script>
+</body>
+</html>
