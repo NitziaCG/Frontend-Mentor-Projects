@@ -44,7 +44,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Repository](https://github.com/NitziaCG/Frontend-Mentor-Projects/tree/main/time-tracking-dashboard-main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://time-tracking-dashboard-18.netlify.app/](https://time-tracking-dashboard-18.netlify.app/)
 
 ## My process
 
